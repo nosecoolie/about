@@ -63,6 +63,24 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
+	var _profile = __webpack_require__(184);
+
+	var _profile2 = _interopRequireDefault(_profile);
+
+	var _skill = __webpack_require__(185);
+
+	var _skill2 = _interopRequireDefault(_skill);
+
+	var _timeline = __webpack_require__(186);
+
+	var _timeline2 = _interopRequireDefault(_timeline);
+
+	var _conclusion = __webpack_require__(187);
+
+	var _conclusion2 = _interopRequireDefault(_conclusion);
+
+	__webpack_require__(188);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -85,12 +103,11 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                null,
-	                _react2.default.createElement(
-	                    'h1',
-	                    null,
-	                    'Hello, World'
-	                )
+	                { className: 'page-wrapper', style: { padding: '100px 30px 30px 30px', backgroundColor: '#eee' } },
+	                _react2.default.createElement(_profile2.default, null),
+	                _react2.default.createElement(_skill2.default, null),
+	                _react2.default.createElement(_timeline2.default, null),
+	                _react2.default.createElement(_conclusion2.default, null)
 	            );
 	        }
 	    }]);
@@ -393,8 +410,15 @@
 /* 5 */
 /***/ function(module, exports) {
 
+	/*
+	object-assign
+	(c) Sindre Sorhus
+	@license MIT
+	*/
+
 	'use strict';
 	/* eslint-disable no-unused-vars */
+	var getOwnPropertySymbols = Object.getOwnPropertySymbols;
 	var hasOwnProperty = Object.prototype.hasOwnProperty;
 	var propIsEnumerable = Object.prototype.propertyIsEnumerable;
 
@@ -415,7 +439,7 @@
 			// Detect buggy property enumeration order in older V8 versions.
 
 			// https://bugs.chromium.org/p/v8/issues/detail?id=4118
-			var test1 = new String('abc');  // eslint-disable-line
+			var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
 			test1[5] = 'de';
 			if (Object.getOwnPropertyNames(test1)[0] === '5') {
 				return false;
@@ -444,7 +468,7 @@
 			}
 
 			return true;
-		} catch (e) {
+		} catch (err) {
 			// We don't expect any of the above to throw, but better to be safe.
 			return false;
 		}
@@ -464,8 +488,8 @@
 				}
 			}
 
-			if (Object.getOwnPropertySymbols) {
-				symbols = Object.getOwnPropertySymbols(from);
+			if (getOwnPropertySymbols) {
+				symbols = getOwnPropertySymbols(from);
 				for (var i = 0; i < symbols.length; i++) {
 					if (propIsEnumerable.call(from, symbols[i])) {
 						to[symbols[i]] = from[symbols[i]];
@@ -6721,8 +6745,15 @@
 /* 54 */
 /***/ function(module, exports) {
 
+	/*
+	object-assign
+	(c) Sindre Sorhus
+	@license MIT
+	*/
+
 	'use strict';
 	/* eslint-disable no-unused-vars */
+	var getOwnPropertySymbols = Object.getOwnPropertySymbols;
 	var hasOwnProperty = Object.prototype.hasOwnProperty;
 	var propIsEnumerable = Object.prototype.propertyIsEnumerable;
 
@@ -6743,7 +6774,7 @@
 			// Detect buggy property enumeration order in older V8 versions.
 
 			// https://bugs.chromium.org/p/v8/issues/detail?id=4118
-			var test1 = new String('abc');  // eslint-disable-line
+			var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
 			test1[5] = 'de';
 			if (Object.getOwnPropertyNames(test1)[0] === '5') {
 				return false;
@@ -6772,7 +6803,7 @@
 			}
 
 			return true;
-		} catch (e) {
+		} catch (err) {
 			// We don't expect any of the above to throw, but better to be safe.
 			return false;
 		}
@@ -6792,8 +6823,8 @@
 				}
 			}
 
-			if (Object.getOwnPropertySymbols) {
-				symbols = Object.getOwnPropertySymbols(from);
+			if (getOwnPropertySymbols) {
+				symbols = getOwnPropertySymbols(from);
 				for (var i = 0; i < symbols.length; i++) {
 					if (propIsEnumerable.call(from, symbols[i])) {
 						to[symbols[i]] = from[symbols[i]];
@@ -21816,6 +21847,1003 @@
 
 	module.exports = ReactDOMInvalidARIAHook;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Profile = function (_React$Component) {
+	    _inherits(Profile, _React$Component);
+
+	    function Profile() {
+	        _classCallCheck(this, Profile);
+
+	        return _possibleConstructorReturn(this, (Profile.__proto__ || Object.getPrototypeOf(Profile)).apply(this, arguments));
+	    }
+
+	    _createClass(Profile, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'card' },
+	                _react2.default.createElement('div', {
+	                    style: {
+	                        position: 'absolute',
+	                        top: '-60px',
+	                        left: '50%',
+	                        width: '120px',
+	                        height: '120px',
+	                        marginLeft: '-60px',
+	                        borderRadius: '100%',
+	                        backgroundImage: 'url(\'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-0/p206x206/13346532_1348349691847420_1153889197217343765_n.jpg?oh=c44337c1db1cbf04190ae80a0d2afe46&oe=58D757FB\')',
+	                        backgroundSize: 'cover',
+	                        backgroundPosition: '-11px 50%'
+	                    }
+	                }),
+	                _react2.default.createElement(
+	                    'div',
+	                    { style: { paddingTop: '56px', textAlign: 'center' } },
+	                    _react2.default.createElement(
+	                        'h2',
+	                        { className: 'name', style: { margin: '8px 0', color: '#222' } },
+	                        '\u9673\u9A65'
+	                    ),
+	                    _react2.default.createElement(
+	                        'h4',
+	                        { className: 'title', style: { margin: '8px 0', color: '#666' } },
+	                        'Front-End Developer'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        { style: { fontSize: '1˙px', lineHeight: '1.3', color: '#666', textAlign: 'justify' } },
+	                        '\u55E8\uFF0C\u6211\u662F\u9673\u9A65\uFF0C\u9019\u88E1\u662F\u4E00\u500B\u7528\u4F86\u7C21\u55AE\u4ECB\u7D39\u6211\u81EA\u5DF1\u7684\u7DB2\u7AD9\uFF0C\u4E3B\u8981\u662F\u7528\u4E86 React, Webpack, \u53E6\u5916\u4E5F\u6709\u4F7F\u7528\u4E00\u4E9B CI \u7684\u5DE5\u5177\u50CF\u662F ESLint, Mocha & Travis \u65B9\u4FBF\u6211\u958B\u767C\u4F48\u5C6C\uFF0C\u4EE5\u53CA\u6E2C\u8A66\uFF0C \u95DC\u65BC\u6211\u4F7F\u7528\u7684 Dependencies \u548C\u6211\u7528\u5B83\u5011\u4F86\u505A\u4EC0\u9EBC\u4E8B\uFF0C\u6211\u90FD\u5BEB\u5728\u4E86 readme \u88E1\u3002 \u6216\u662F\u4F60\u504F\u597D\u76F4\u63A5\u5148\u770B\u6211\u7684\u5C65\u6B77\uFF0C\u6211\u4E5F\u6E96\u5099\u4E86 PDF \u7684\u7248\u672C\u3002',
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: '', target: '_blank', style: { color: '#2196F3' } },
+	                            '\u5728\u9019\u88E1\u3002'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: '', target: '_blank', className: 'skill-tag', style: { height: '36px', lineHeight: '36px', padding: '0 20px', backgroundColor: '#2196F3', fontSize: '16px', cursor: 'pointer' } },
+	                        '\u6211\u7684\u5C65\u6B77'
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Profile;
+	}(_react2.default.Component);
+
+	exports.default = Profile;
+
+/***/ },
+/* 185 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Protfolio = function (_React$Component) {
+	    _inherits(Protfolio, _React$Component);
+
+	    function Protfolio() {
+	        _classCallCheck(this, Protfolio);
+
+	        return _possibleConstructorReturn(this, (Protfolio.__proto__ || Object.getPrototypeOf(Protfolio)).apply(this, arguments));
+	    }
+
+	    _createClass(Protfolio, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { id: 'my-skill' },
+	                _react2.default.createElement(
+	                    'h2',
+	                    { className: 'section-title' },
+	                    'Skills'
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'card' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'skill-wrapper indigo' },
+	                        _react2.default.createElement(
+	                            'h4',
+	                            null,
+	                            'Javascript'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'React'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'ES6'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'Angular1'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'Backbone'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'jQuery'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'skill-wrapper green' },
+	                        _react2.default.createElement(
+	                            'h4',
+	                            null,
+	                            'HTML & CSS'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'HTML5'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'CSS3'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'RWD Layout'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'SASS'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'skill-wrapper red' },
+	                        _react2.default.createElement(
+	                            'h4',
+	                            null,
+	                            'Hybrid App'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'Webview'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'Javascript Bridge'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'Cordova'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'Ionic'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'skill-wrapper orange' },
+	                        _react2.default.createElement(
+	                            'h4',
+	                            null,
+	                            'Build Tool & CI Tool'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'Webpack'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'Gulp'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'Travis'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'Mocha'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'Nightmares'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'ESLint'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'skill-wrapper lime' },
+	                        _react2.default.createElement(
+	                            'h4',
+	                            null,
+	                            'Backend & Others'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'Firebase'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'JAVA'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'SQL'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'Sketch'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
+	                            'Basic UI design'
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Protfolio;
+	}(_react2.default.Component);
+
+	exports.default = Protfolio;
+
+/***/ },
+/* 186 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var MyTimeline = function (_React$Component) {
+	    _inherits(MyTimeline, _React$Component);
+
+	    function MyTimeline() {
+	        _classCallCheck(this, MyTimeline);
+
+	        return _possibleConstructorReturn(this, (MyTimeline.__proto__ || Object.getPrototypeOf(MyTimeline)).apply(this, arguments));
+	    }
+
+	    _createClass(MyTimeline, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { id: 'my-experience' },
+	                _react2.default.createElement(
+	                    'h2',
+	                    { className: 'section-title' },
+	                    'Experience'
+	                ),
+	                _react2.default.createElement(
+	                    'section',
+	                    { id: 'cd-timeline', className: 'cd-container' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'cd-timeline-block' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'cd-timeline-img cd-location' },
+	                            _react2.default.createElement('img', { src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg', alt: 'Location' })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'cd-timeline-content' },
+	                            _react2.default.createElement(
+	                                'h2',
+	                                { className: 'content-title' },
+	                                'EZTABLE \u7C21\u55AE\u684C'
+	                            ),
+	                            _react2.default.createElement(
+	                                'h2',
+	                                null,
+	                                'Frontend Developer'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'EZTABLE \u662F\u4E00\u9593\u81F4\u529B\u65BC\u7DDA\u4E0A\u9910\u5EF3\u8A02\u4F4D\u7684 O2O \u7DB2\u8DEF\u516C\u53F8\uFF0C\u540C\u6642\u4E0A\u7AD9\u4EBA\u6578\u6700\u9AD8\u66FE\u7D93\u9054\u5230 3000 \u4EBA\uFF0C\u6BCF\u6708\u7684\u6D41\u91CF\u5E73\u5747\u4E5F\u90FD\u5728 80 \u842C\u4EBA\u6B21\u5DE6\u53F3\u3002 \u5728\u9019\u88E1\u6211\u9664\u4E86\u4F7F\u7528 Backbone & Angular \u7DAD\u8B77\u820A\u7DB2\u7AD9\u4EE5\u5916\uFF0C\u591A\u6578\u7684\u6642\u9593\u662F\u7528 React \u5EFA\u7F6E\u4E00\u500B\u5168\u65B0\u67B6\u69CB\u7684\u7DB2\u7AD9\uFF0C\u6216\u662F\u7DE8\u5BEB Webview \u548C Bridge \u8B93 IOS & Android \u5169\u908A\u5E73\u53F0\u7684 App \u53EF\u4EE5\u5171\u7528\u9801\u9762\u4E26\u8207 App \u505A\u4E8B\u4EF6\u50B3\u905E\u3002',
+	                                _react2.default.createElement('br', null),
+	                                'EZTABLE \u7684\u7522\u54C1\u4E0A\u7DDA\u591A\u5E74\uFF0C\u4E5F\u6709\u4E00\u5957\u5B8C\u6574\u7684\u958B\u767C\u6D41\u7A0B\uFF0C\u8B93\u6211\u5B78\u7FD2\u5230\u4E86\u5F88\u591A\uFF0C\u5C24\u5176\u524D\u7AEF Web Team \u53EA\u6709\u5169\u540D\u6210\u54E1(\u5305\u542B\u6211)\uFF0C\u96D6\u7136\u5DE5\u4F5C\u6642\u7A0B\u7DCA\u6E4A\uFF0C\u58D3\u529B\u4E5F\u4E0D\u5C0F\uFF0C\u4F46\u662F\u5BE6\u969B\u53C3\u8207\u7522\u54C1\u7684\u958B\u767C\uFF0C\u5C0D\u65B0\u529F\u80FD\u7684\u6D41\u7A0B\u63D0\u51FA\u81EA\u5DF1\u7684\u898B\u89E3\u8207\u610F\u898B\uFF0C\u9019\u7A2E\u7A2E\u90FD\u8B93\u6211\u5FD9\u5F97\u975E\u5E38\u958B\u5FC3\u3002\u5C24\u5176\u662F\u770B\u8457\u81EA\u5DF1\u8F9B\u82E6\u6253\u9020\u5168\u65B0\u7684\u7DB2\u7AD9(tw.eztable.com)\u6B63\u5F0F\u4E0A\u7DDA\u6642\u7684\u7576\u4E0B\u771F\u7684\u975E\u5E38\u611F\u52D5\u3002'
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://tw.eztable.com', target: '_blank', className: 'cd-read-more' },
+	                                'check EZTABLE out'
+	                            ),
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'cd-date' },
+	                                '2015/9/16 ~ 2017/2/28'
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'cd-timeline-block' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'cd-timeline-img cd-location' },
+	                            _react2.default.createElement('img', { src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg', alt: 'Location' })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'cd-timeline-content' },
+	                            _react2.default.createElement(
+	                                'h2',
+	                                { className: 'content-title' },
+	                                'ilinke'
+	                            ),
+	                            _react2.default.createElement(
+	                                'h2',
+	                                null,
+	                                'Full-stack Developer'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'ilinke \u806F\u6210\u6578\u7DB2\u662F\u4E00\u9593\u64C1\u6709\u81EA\u5DF1\u7522\u54C1 Cupoy\uFF0C\u540C\u6642\u4E5F\u6709\u63A5\u6848\u7684\u5C0F\u578B\u516C\u53F8\uFF0C\u6211\u5728\u9019\u88E1\u662F\u626E\u6F14\u7684\u89D2\u8272\u662F\u5168\u7AEF\u5DE5\u7A0B\u5E2B\u517C\u5C0F\u5C0F\u8A2D\u8A08\uFF0C\u4E3B\u8981\u7684\u5DE5\u4F5C\u5167\u5BB9\u662F\u7528 Java \u53CA Structs \u64B0\u5BEB\u5F8C\u7AEF API \uFF0C\u4E26\u4E14\u81EA\u5DF1\u5728\u524D\u7AEF\u7528 Angular \u4E32\u63A5\u8D77\u4F86\uFF0C\u6709\u8DA3\u7684\u662F\uFF0C\u56E0\u70BA\u806F\u6210\u6578\u7DB2\u662F\u5C0F\u578B\u516C\u53F8\uFF0C\u6210\u54E1\u53EA\u6709\u4E94\u4EBA\uFF0C\u6240\u4EE5\u6709\u7684\u6642\u5019\u6211\u6703\u5BA2\u4E32 UI designer \u7684\u89D2\u8272\uFF0C\u66FF\u4E00\u4E9B\u5C08\u6848\u62C9\u62C9 sketch \u505A\u7C21\u55AE\u7684\u8A2D\u8A08\uFF0C\u66FE\u7D93\u6709\u500B\u6848\u5B50\u5C31\u662F\u5F9E\u8A2D\u8A08\u5230\u524D\u7AEF\u5230\u5F8C\u7AEF\u90FD\u662F\u7531\u6211\u5B8C\u6210\u7684\u3002',
+	                                _react2.default.createElement('br', null),
+	                                '\u4E5F\u56E0\u6B64\u6211\u5728\u9019\u908A\u990A\u6210\u4E86\u5C0D UI \u7684\u654F\u611F\u5EA6\uFF0C\u5728\u62FF\u5230 UI \u7A3F\u5207\u7248\u524D\uFF0C\u6703\u5148\u53BB\u7701\u601D UI \u5143\u4EF6\u7684 Layout \u662F\u5426\u5408\u7406\u624D\u52D5\u624B\u5207\u7248\uFF0C\u82E5\u662F\u767C\u73FE\u6709\u7591\u616E\u7684\u5730\u65B9\uFF0C\u6703\u548C PM \u8207\u8A2D\u8A08\u5E2B\u8A0E\u8AD6\u539F\u56E0\u548C\u662F\u5426\u80FD\u6709\u66F4\u597D\u7684\u7D50\u8AD6\uFF0C\u4E5F\u8B93\u6211\u6C7A\u5B9A\u5F80\u524D\u7AEF\u5DE5\u7A0B\u5E2B\u9019\u689D\u8DEF\u524D\u9032\u3002'
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://www.cupoy.com/introduction', target: '_blank', className: 'cd-read-more' },
+	                                'check Cupoy out'
+	                            ),
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'cd-date' },
+	                                '2015/2 ~ 2015/9'
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'cd-timeline-block' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'cd-timeline-img cd-movie' },
+	                            _react2.default.createElement('img', { src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg', alt: 'Movie' })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'cd-timeline-content' },
+	                            _react2.default.createElement(
+	                                'h2',
+	                                { className: 'content-title' },
+	                                '\u8CC7\u7B56\u6703\u5168\u65B9\u4F4D Java \u7A0B\u5F0F\u8A2D\u8A08\u5E2B\u990A\u6210\u73ED'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                { style: { marginBottom: 0 } },
+	                                '\u9000\u4F0D\u5F8C\u7684\u6211\u60F3\u52A0\u5F37\u81EA\u5DF1\u5C0D WEB \u5168\u7AEF\u7684\u76F8\u95DC\u77E5\u8B58\uFF0C\u4EE5\u53CA\u696D\u754C\u6703\u4F7F\u7528\u7684 solution\uFF0C\u6240\u4EE5\u9078\u64C7\u4E86\u9032\u5165\u8CC7\u7B56\u6703\u5145\u5BE6\u81EA\u5DF1\u5728\u9019\u65B9\u9762\u7684\u80FD\u529B\u3002',
+	                                _react2.default.createElement('br', null),
+	                                '\u5728\u8CC7\u7B56\u6703\u4E2D\uFF0C\u6211\u5B78\u5230\u4E86 Spring Structs \u7B49\u696D\u754C\u5E38\u7528\u7684 Java \u5F8C\u7AEF Framework\uFF0C\u8B93\u81EA\u5DF1\u5C0D\u65BC\u696D\u754C\u5F8C\u7AEF\u7684\u6A23\u8C8C\u66F4\u6E05\u6790\u660E\u78BA\u4E86\uFF0C\u4E5F\u5229\u7528\u4E86\u9019\u4E9B Framework \u505A\u51FA\u4E86\u4E00\u500B\u8A02\u4FBF\u7576\u5E73\u53F0\u7684\u5C08\u984C\u3002'
+	                            ),
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'cd-date' },
+	                                '2014/8 ~ 2015/1'
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'cd-timeline-block' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'cd-timeline-img cd-picture' },
+	                            _react2.default.createElement('img', { src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg', alt: 'Picture' })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'cd-timeline-content' },
+	                            _react2.default.createElement(
+	                                'h2',
+	                                { className: 'content-title' },
+	                                '\u7B2C17\u5C46\u5168\u570B\u8CC7\u8A0A\u670D\u52D9\u7AF6\u8CFD\u96D9\u51A0\u8ECD'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                { style: { marginBottom: 0 } },
+	                                '\u6211\u5728\u5B78\u6821\u7684\u7562\u696D\u5C08\u984C KinHealth \u4E92\u52D5\u5FA9\u5065\u5E73\u53F0\uFF0C\u662F\u7D50\u5408\u4E86\u6211\u5011\u5B78\u6821\u9577\u5E9A\u5927\u5B78\u7684\u5FA9\u5065\u8CC7\u6E90\uFF0C\u4EE5\u53CA\u9AD4\u611F\u8996\u8A0A\u7684\u5FA9\u5065\u8EDF\u9AD4\u3002',
+	                                _react2.default.createElement('br', null),
+	                                '\u800C KinHealth \u4E5F\u5728\u5168\u570B\u8CC7\u8A0A\u670D\u52D9\u5275\u65B0\u7AF6\u8CFD\u4E2D\u7684\u4E9E\u592A\u5340\u4EA4\u6D41\u7D44\u4EE5\u53CA\u8CC7\u8A0A\u6280\u8853\u61C9\u7528\u7D44\u90FD\u62FF\u5230\u4E86\u7B2C\u4E00\u540D\u3002'
+	                            ),
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'cd-date' },
+	                                '2012/11/10'
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'cd-timeline-block' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'cd-timeline-img cd-location' },
+	                            _react2.default.createElement('img', { src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg', alt: 'Location' })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'cd-timeline-content' },
+	                            _react2.default.createElement(
+	                                'h2',
+	                                { className: 'content-title' },
+	                                '\u9577\u5E9A\u5927\u5B78 \u8CC7\u8A0A\u7BA1\u7406\u5B78\u7CFB\u7562\u696D'
+	                            ),
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'cd-date' },
+	                                '2009/9 ~ 2013/6'
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return MyTimeline;
+	}(_react2.default.Component);
+
+	// <Card>
+	//     <Timeline
+	//         style={{
+	//             margin: '30px auto',
+	//             maxWidth: '300px'
+	//         }}
+	//         pending={
+	//             <a href='#'>See more</a>
+	//         }
+	//     >
+	//         <Timeline.Item>2012/11/10 第17屆全國資訊服務競賽雙冠軍</Timeline.Item>
+	//         <Timeline.Item>2013/6 長庚大學 資訊管理學系畢業</Timeline.Item>
+	//         <Timeline.Item>2014/8 ~ 2015/1 資策會全方位 java 程式設計師養成班</Timeline.Item>
+	//         <Timeline.Item>2015/2 ~ 2015/8 ilinke 前端工程師</Timeline.Item>
+	//         <Timeline.Item>2015/9 ~ 2017/2 EZTABLE 簡單桌 前端工程師</Timeline.Item>
+	//     </Timeline>
+	// </Card>
+
+	exports.default = MyTimeline;
+
+/***/ },
+/* 187 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Conclusion = function (_React$Component) {
+	    _inherits(Conclusion, _React$Component);
+
+	    function Conclusion() {
+	        _classCallCheck(this, Conclusion);
+
+	        return _possibleConstructorReturn(this, (Conclusion.__proto__ || Object.getPrototypeOf(Conclusion)).apply(this, arguments));
+	    }
+
+	    _createClass(Conclusion, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { id: 'conclusion' },
+	                _react2.default.createElement(
+	                    'h2',
+	                    { className: 'section-title' },
+	                    'Conclusion'
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'card' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { style: { textAlign: 'center' } },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { style: { fontSize: '16px', lineHeight: '1.4', color: '#666', textAlign: 'justify', margin: 0 } },
+	                            '\u7E3D\u7D50\u8981\u8AAA\u7684\u662F\u6211\u4F4F\u53F0\u5317\uFF0C79\u5E74\u6B21\uFF0C\u8208\u8DA3\u662F\u684C\u904A\u548C 3C \u7522\u54C1\uFF0C\u56E0\u70BA\u524D\u7AEF\u6700\u8CBC\u8FD1\u4F7F\u7528\u8005\uFF0C\u6240\u4EE5\u7FA9\u7121\u53CD\u9867\u7684\u611B\u4E0A\u524D\u7AEF\u3002',
+	                            _react2.default.createElement('br', null),
+	                            '\u8B1D\u8B1D\u4F60\u5C07\u9019\u4EFD\u7C21\u6B77\u770B\u5B8C\uFF0C\u5982\u679C\u4F60\u6709\u8208\u8DA3\u548C\u6211\u5408\u4F5C\u7684\u8A71\u4E0D\u8AD6\u4EFB\u4F55\u5F62\u5F0F\u90FD\u6B61\u8FCE\u804A\u804A\uFF0C\u9019\u908A\u662F\u6211\u7684\u806F\u7D61\u8CC7\u8A0A\u3002',
+	                            _react2.default.createElement(
+	                                'div',
+	                                null,
+	                                '\u96FB\u8A71\uFF1A',
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    { href: 'tel:0919453898' },
+	                                    '0919-453898'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                null,
+	                                '\u4FE1\u7BB1\uFF1A',
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    { href: 'mailto:nosecoolie@gmail.com' },
+	                                    'nosecoolie@gmail.com'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                null,
+	                                'PDF \u5C65\u6B77\uFF1A',
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    { href: 'mailto:nosecoolie@gmail.com' },
+	                                    'nosecoolie@gmail.com'
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Conclusion;
+	}(_react2.default.Component);
+
+	exports.default = Conclusion;
+
+/***/ },
+/* 188 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(189);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(191)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./app.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./app.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 189 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(190)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "  /* --------------------------------\n\n    timeline css\n\n  -------------------------------- */\n  html * {\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n\n  *, *:after, *:before {\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box;\n  }\n\n  body {\n    font-size: 100%;\n    /*font-family: \"Open Sans\", serif;*/\n    color: #7f8c97;\n    background-color: #e9f0f5;\n  }\n\n  a {\n    color: #acb7c0;\n    text-decoration: none;\n    font-family: \"Open Sans\", sans-serif;\n  }\n\n  img {\n    max-width: 100%;\n  }\n\n  h1, h2 {\n    font-family: \"Open Sans\", sans-serif;\n    font-weight: bold;\n  }\n\n  /* --------------------------------\n\n  Modules - reusable parts of our design\n\n  -------------------------------- */\n  .cd-container {\n    /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */\n    width: 90%;\n    max-width: 1170px;\n    margin: 0 auto;\n  }\n  .cd-container::after {\n    /* clearfix */\n    content: '';\n    display: table;\n    clear: both;\n  }\n\n  /* --------------------------------\n\n  Main components\n\n  -------------------------------- */\n  header {\n    height: 200px;\n    line-height: 200px;\n    text-align: center;\n    background: #303e49;\n  }\n  header h1 {\n    color: #ffffff;\n    font-size: 18px;\n    font-size: 1.125rem;\n  }\n  @media only screen and (min-width: 1170px) {\n    header {\n      height: 300px;\n      line-height: 300px;\n    }\n    header h1 {\n      font-size: 24px;\n      font-size: 1.5rem;\n    }\n  }\n\n  #cd-timeline {\n    position: relative;\n    padding: 0 0 2em;\n    margin-top: 4px;\n    margin-bottom: 2em;\n  }\n  #cd-timeline::before {\n    /* this is the vertical line */\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 18px;\n    height: 100%;\n    width: 4px;\n    background: #d7e4ed;\n  }\n  @media only screen and (min-width: 1170px) {\n    #cd-timeline {\n      margin-top: 3em;\n      margin-bottom: 3em;\n    }\n    #cd-timeline::before {\n      left: 50%;\n      margin-left: -2px;\n    }\n  }\n\n  .cd-timeline-block {\n    position: relative;\n    margin: 2em 0;\n  }\n  .cd-timeline-block::after {\n    clear: both;\n    content: \"\";\n    display: table;\n  }\n  .cd-timeline-block:first-child {\n    margin-top: 0;\n  }\n  .cd-timeline-block:last-child {\n    margin-bottom: 0;\n  }\n  @media only screen and (min-width: 1170px) {\n    .cd-timeline-block {\n      margin: 4em 0;\n    }\n    .cd-timeline-block:first-child {\n      margin-top: 0;\n    }\n    .cd-timeline-block:last-child {\n      margin-bottom: 0;\n    }\n  }\n\n  .cd-timeline-img {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 40px;\n    height: 40px;\n    border-radius: 50%;\n    box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);\n  }\n  .cd-timeline-img img {\n    display: block;\n    width: 24px;\n    height: 24px;\n    position: relative;\n    left: 50%;\n    top: 50%;\n    margin-left: -12px;\n    margin-top: -12px;\n  }\n  .cd-timeline-img.cd-picture {\n    background: #75ce66;\n  }\n  .cd-timeline-img.cd-movie {\n    background: #c03b44;\n  }\n  .cd-timeline-img.cd-location {\n    background: #f0ca45;\n  }\n  @media only screen and (min-width: 1170px) {\n    .cd-timeline-img {\n      width: 60px;\n      height: 60px;\n      left: 50%;\n      margin-left: -30px;\n      /* Force Hardware Acceleration in WebKit */\n      -webkit-transform: translateZ(0);\n      -webkit-backface-visibility: hidden;\n    }\n    .cssanimations .cd-timeline-img.is-hidden {\n      visibility: hidden;\n    }\n    .cssanimations .cd-timeline-img.bounce-in {\n      visibility: visible;\n      -webkit-animation: cd-bounce-1 0.6s;\n      -moz-animation: cd-bounce-1 0.6s;\n      animation: cd-bounce-1 0.6s;\n    }\n  }\n\n  @-webkit-keyframes cd-bounce-1 {\n    0% {\n      opacity: 0;\n      -webkit-transform: scale(0.5);\n    }\n    60% {\n      opacity: 1;\n      -webkit-transform: scale(1.2);\n    }\n    100% {\n      -webkit-transform: scale(1);\n    }\n  }\n  @-moz-keyframes cd-bounce-1 {\n    0% {\n      opacity: 0;\n      -moz-transform: scale(0.5);\n    }\n    60% {\n      opacity: 1;\n      -moz-transform: scale(1.2);\n    }\n    100% {\n      -moz-transform: scale(1);\n    }\n  }\n  @keyframes cd-bounce-1 {\n    0% {\n      opacity: 0;\n      -webkit-transform: scale(0.5);\n      -moz-transform: scale(0.5);\n      -ms-transform: scale(0.5);\n      -o-transform: scale(0.5);\n      transform: scale(0.5);\n    }\n    60% {\n      opacity: 1;\n      -webkit-transform: scale(1.2);\n      -moz-transform: scale(1.2);\n      -ms-transform: scale(1.2);\n      -o-transform: scale(1.2);\n      transform: scale(1.2);\n    }\n    100% {\n      -webkit-transform: scale(1);\n      -moz-transform: scale(1);\n      -ms-transform: scale(1);\n      -o-transform: scale(1);\n      transform: scale(1);\n    }\n  }\n  .cd-timeline-content {\n    position: relative;\n    margin-left: 60px;\n    background: #ffffff;\n    border-radius: 0.25em;\n    padding: 1em;\n    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);\n    transition: all 0.3s cubic-bezier(.25,.8,.25,1);\n    /*box-shadow: 0 3px 0 #d7e4ed;*/\n  }\n  .cd-timeline-content::after {\n    clear: both;\n    content: \"\";\n    display: table;\n  }\n  .cd-timeline-content h2 {\n    color: #303e49;\n  }\n  .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {\n    font-size: 13px;\n    font-size: 0.8125rem;\n  }\n  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {\n    display: inline-block;\n  }\n  .cd-timeline-content p {\n    margin: 1em 0;\n    line-height: 1.6;\n  }\n  .cd-timeline-content .cd-read-more {\n    float: right;\n    padding: .8em 1em;\n    background: #607D8B;\n    color: #ffffff;\n    border-radius: 0.25em;\n    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);\n  }\n  .no-touch .cd-timeline-content .cd-read-more:hover {\n    background-color: #bac4cb;\n  }\n  .cd-timeline-content h2 {\n    margin: 0;\n  }\n  .cd-timeline-content .cd-date {\n    float: left;\n    padding: .8em 0;\n    opacity: .7;\n    color: #333;\n  }\n  .cd-timeline-content::before {\n    content: '';\n    position: absolute;\n    top: 16px;\n    right: 100%;\n    height: 0;\n    width: 0;\n    border: 7px solid transparent;\n    border-right: 7px solid #ffffff;\n  }\n  @media only screen and (min-width: 768px) {\n    .cd-timeline-content h2 {\n      font-size: 20px;\n      font-size: 1.25rem;\n    }\n    .cd-timeline-content p {\n      font-size: 16px;\n      font-size: 1rem;\n    }\n    .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {\n      font-size: 14px;\n      font-size: 0.875rem;\n    }\n  }\n  @media only screen and (min-width: 1170px) {\n    .cd-timeline-content {\n      margin-left: 0;\n      padding: 1.6em;\n      width: 45%;\n    }\n    .cd-timeline-content::before {\n      top: 24px;\n      left: 100%;\n      border-color: transparent;\n      border-left-color: #ffffff;\n    }\n    .cd-timeline-content .cd-read-more {\n      float: left;\n    }\n    .cd-timeline-content .cd-date {\n      position: absolute;\n      width: 100%;\n      left: 122%;\n      top: 6px;\n      font-size: 16px;\n      font-size: 1rem;\n    }\n    .cd-timeline-block:nth-child(even) .cd-timeline-content {\n      float: right;\n    }\n    .cd-timeline-block:nth-child(even) .cd-timeline-content::before {\n      top: 24px;\n      left: auto;\n      right: 100%;\n      border-color: transparent;\n      border-right-color: #ffffff;\n    }\n    .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {\n      float: right;\n    }\n    .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {\n      left: auto;\n      right: 122%;\n      text-align: right;\n    }\n    .cssanimations .cd-timeline-content.is-hidden {\n      visibility: hidden;\n    }\n    .cssanimations .cd-timeline-content.bounce-in {\n      visibility: visible;\n      -webkit-animation: cd-bounce-2 0.6s;\n      -moz-animation: cd-bounce-2 0.6s;\n      animation: cd-bounce-2 0.6s;\n    }\n  }\n\n  @media only screen and (min-width: 1170px) {\n    /* inverse bounce effect on even content blocks */\n    .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {\n      -webkit-animation: cd-bounce-2-inverse 0.6s;\n      -moz-animation: cd-bounce-2-inverse 0.6s;\n      animation: cd-bounce-2-inverse 0.6s;\n    }\n  }\n  @-webkit-keyframes cd-bounce-2 {\n    0% {\n      opacity: 0;\n      -webkit-transform: translateX(-100px);\n    }\n    60% {\n      opacity: 1;\n      -webkit-transform: translateX(20px);\n    }\n    100% {\n      -webkit-transform: translateX(0);\n    }\n  }\n  @-moz-keyframes cd-bounce-2 {\n    0% {\n      opacity: 0;\n      -moz-transform: translateX(-100px);\n    }\n    60% {\n      opacity: 1;\n      -moz-transform: translateX(20px);\n    }\n    100% {\n      -moz-transform: translateX(0);\n    }\n  }\n  @keyframes cd-bounce-2 {\n    0% {\n      opacity: 0;\n      -webkit-transform: translateX(-100px);\n      -moz-transform: translateX(-100px);\n      -ms-transform: translateX(-100px);\n      -o-transform: translateX(-100px);\n      transform: translateX(-100px);\n    }\n    60% {\n      opacity: 1;\n      -webkit-transform: translateX(20px);\n      -moz-transform: translateX(20px);\n      -ms-transform: translateX(20px);\n      -o-transform: translateX(20px);\n      transform: translateX(20px);\n    }\n    100% {\n      -webkit-transform: translateX(0);\n      -moz-transform: translateX(0);\n      -ms-transform: translateX(0);\n      -o-transform: translateX(0);\n      transform: translateX(0);\n    }\n  }\n  @-webkit-keyframes cd-bounce-2-inverse {\n    0% {\n      opacity: 0;\n      -webkit-transform: translateX(100px);\n    }\n    60% {\n      opacity: 1;\n      -webkit-transform: translateX(-20px);\n    }\n    100% {\n      -webkit-transform: translateX(0);\n    }\n  }\n  @-moz-keyframes cd-bounce-2-inverse {\n    0% {\n      opacity: 0;\n      -moz-transform: translateX(100px);\n    }\n    60% {\n      opacity: 1;\n      -moz-transform: translateX(-20px);\n    }\n    100% {\n      -moz-transform: translateX(0);\n    }\n  }\n  @keyframes cd-bounce-2-inverse {\n    0% {\n      opacity: 0;\n      -webkit-transform: translateX(100px);\n      -moz-transform: translateX(100px);\n      -ms-transform: translateX(100px);\n      -o-transform: translateX(100px);\n      transform: translateX(100px);\n    }\n    60% {\n      opacity: 1;\n      -webkit-transform: translateX(-20px);\n      -moz-transform: translateX(-20px);\n      -ms-transform: translateX(-20px);\n      -o-transform: translateX(-20px);\n      transform: translateX(-20px);\n    }\n    100% {\n      -webkit-transform: translateX(0);\n      -moz-transform: translateX(0);\n      -ms-transform: translateX(0);\n      -o-transform: translateX(0);\n      transform: translateX(0);\n    }\n  }\n\n\n/*\n    End of Timeline\n*/\n\n.cd-read-more {\n    background-color:\n}\n\n\n.section-title {\n    margin: 30px 0;\n    text-align: center;\n    color: #777;\n}\n\n.card {\n    position: relative;\n    background-color: #fff;\n    max-width: 800px;\n    margin: 0 auto;\n    padding: 20px;\n    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);\n    transition: all 0.3s cubic-bezier(.25,.8,.25,1);\n}\n\n.card:hover, .cd-timeline-content:hover {\n    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\n}\n\n.card h4 {\n    margin: 6px 0\n}\n\n.skill-tag {\n    position: relative;\n    display: inline-block;\n    font-size: 14px;\n    letter-spacing: 0px;\n    font-weight: 500;\n    margin: 0px;\n    user-select: none;\n    padding: 0 16px;\n    height: 28px;\n    line-height: 28px;\n    border-radius: 3px;\n    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);\n    color: #fff;\n    margin: 4px;\n}\n\n.skill-wrapper.indigo .skill-tag {\n    background-color: #3F51B5;\n}\n.skill-wrapper.indigo h4 {\n    color: #3F51B5;\n}\n.skill-wrapper.red .skill-tag {\n    background-color: #F44336;\n}\n.skill-wrapper.red h4 {\n    color: #F44336;\n}\n.skill-wrapper.green .skill-tag {\n    background-color: #009688;\n}\n.skill-wrapper.green h4 {\n    color: #009688;\n}\n.skill-wrapper.lime .skill-tag {\n    background-color: #CDDC39;\n}\n.skill-wrapper.lime h4 {\n    color: #CDDC39;\n}\n.skill-wrapper.orange .skill-tag {\n    background-color: #FF9800;\n}\n.skill-wrapper.orange h4 {\n    color: #F44336;\n}\n\n#conclusion a {\n    color: #2196F3;\n    user-select: initial;\n}\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 190 */
+/***/ function(module, exports) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	// css base code, injected by the css-loader
+	module.exports = function() {
+		var list = [];
+
+		// return the list of modules as css string
+		list.toString = function toString() {
+			var result = [];
+			for(var i = 0; i < this.length; i++) {
+				var item = this[i];
+				if(item[2]) {
+					result.push("@media " + item[2] + "{" + item[1] + "}");
+				} else {
+					result.push(item[1]);
+				}
+			}
+			return result.join("");
+		};
+
+		// import a list of modules into the list
+		list.i = function(modules, mediaQuery) {
+			if(typeof modules === "string")
+				modules = [[null, modules, ""]];
+			var alreadyImportedModules = {};
+			for(var i = 0; i < this.length; i++) {
+				var id = this[i][0];
+				if(typeof id === "number")
+					alreadyImportedModules[id] = true;
+			}
+			for(i = 0; i < modules.length; i++) {
+				var item = modules[i];
+				// skip already imported module
+				// this implementation is not 100% perfect for weird media query combinations
+				//  when a module is imported multiple times with different media queries.
+				//  I hope this will never occur (Hey this way we have smaller bundles)
+				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+					if(mediaQuery && !item[2]) {
+						item[2] = mediaQuery;
+					} else if(mediaQuery) {
+						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+					}
+					list.push(item);
+				}
+			}
+		};
+		return list;
+	};
+
+
+/***/ },
+/* 191 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	var stylesInDom = {},
+		memoize = function(fn) {
+			var memo;
+			return function () {
+				if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+				return memo;
+			};
+		},
+		isOldIE = memoize(function() {
+			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
+		}),
+		getHeadElement = memoize(function () {
+			return document.head || document.getElementsByTagName("head")[0];
+		}),
+		singletonElement = null,
+		singletonCounter = 0,
+		styleElementsInsertedAtTop = [];
+
+	module.exports = function(list, options) {
+		if(false) {
+			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+		}
+
+		options = options || {};
+		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+		// tags it will allow on a page
+		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
+
+		// By default, add <style> tags to the bottom of <head>.
+		if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
+
+		var styles = listToStyles(list);
+		addStylesToDom(styles, options);
+
+		return function update(newList) {
+			var mayRemove = [];
+			for(var i = 0; i < styles.length; i++) {
+				var item = styles[i];
+				var domStyle = stylesInDom[item.id];
+				domStyle.refs--;
+				mayRemove.push(domStyle);
+			}
+			if(newList) {
+				var newStyles = listToStyles(newList);
+				addStylesToDom(newStyles, options);
+			}
+			for(var i = 0; i < mayRemove.length; i++) {
+				var domStyle = mayRemove[i];
+				if(domStyle.refs === 0) {
+					for(var j = 0; j < domStyle.parts.length; j++)
+						domStyle.parts[j]();
+					delete stylesInDom[domStyle.id];
+				}
+			}
+		};
+	}
+
+	function addStylesToDom(styles, options) {
+		for(var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+			if(domStyle) {
+				domStyle.refs++;
+				for(var j = 0; j < domStyle.parts.length; j++) {
+					domStyle.parts[j](item.parts[j]);
+				}
+				for(; j < item.parts.length; j++) {
+					domStyle.parts.push(addStyle(item.parts[j], options));
+				}
+			} else {
+				var parts = [];
+				for(var j = 0; j < item.parts.length; j++) {
+					parts.push(addStyle(item.parts[j], options));
+				}
+				stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+			}
+		}
+	}
+
+	function listToStyles(list) {
+		var styles = [];
+		var newStyles = {};
+		for(var i = 0; i < list.length; i++) {
+			var item = list[i];
+			var id = item[0];
+			var css = item[1];
+			var media = item[2];
+			var sourceMap = item[3];
+			var part = {css: css, media: media, sourceMap: sourceMap};
+			if(!newStyles[id])
+				styles.push(newStyles[id] = {id: id, parts: [part]});
+			else
+				newStyles[id].parts.push(part);
+		}
+		return styles;
+	}
+
+	function insertStyleElement(options, styleElement) {
+		var head = getHeadElement();
+		var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
+		if (options.insertAt === "top") {
+			if(!lastStyleElementInsertedAtTop) {
+				head.insertBefore(styleElement, head.firstChild);
+			} else if(lastStyleElementInsertedAtTop.nextSibling) {
+				head.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);
+			} else {
+				head.appendChild(styleElement);
+			}
+			styleElementsInsertedAtTop.push(styleElement);
+		} else if (options.insertAt === "bottom") {
+			head.appendChild(styleElement);
+		} else {
+			throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
+		}
+	}
+
+	function removeStyleElement(styleElement) {
+		styleElement.parentNode.removeChild(styleElement);
+		var idx = styleElementsInsertedAtTop.indexOf(styleElement);
+		if(idx >= 0) {
+			styleElementsInsertedAtTop.splice(idx, 1);
+		}
+	}
+
+	function createStyleElement(options) {
+		var styleElement = document.createElement("style");
+		styleElement.type = "text/css";
+		insertStyleElement(options, styleElement);
+		return styleElement;
+	}
+
+	function createLinkElement(options) {
+		var linkElement = document.createElement("link");
+		linkElement.rel = "stylesheet";
+		insertStyleElement(options, linkElement);
+		return linkElement;
+	}
+
+	function addStyle(obj, options) {
+		var styleElement, update, remove;
+
+		if (options.singleton) {
+			var styleIndex = singletonCounter++;
+			styleElement = singletonElement || (singletonElement = createStyleElement(options));
+			update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
+			remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
+		} else if(obj.sourceMap &&
+			typeof URL === "function" &&
+			typeof URL.createObjectURL === "function" &&
+			typeof URL.revokeObjectURL === "function" &&
+			typeof Blob === "function" &&
+			typeof btoa === "function") {
+			styleElement = createLinkElement(options);
+			update = updateLink.bind(null, styleElement);
+			remove = function() {
+				removeStyleElement(styleElement);
+				if(styleElement.href)
+					URL.revokeObjectURL(styleElement.href);
+			};
+		} else {
+			styleElement = createStyleElement(options);
+			update = applyToTag.bind(null, styleElement);
+			remove = function() {
+				removeStyleElement(styleElement);
+			};
+		}
+
+		update(obj);
+
+		return function updateStyle(newObj) {
+			if(newObj) {
+				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
+					return;
+				update(obj = newObj);
+			} else {
+				remove();
+			}
+		};
+	}
+
+	var replaceText = (function () {
+		var textStore = [];
+
+		return function (index, replacement) {
+			textStore[index] = replacement;
+			return textStore.filter(Boolean).join('\n');
+		};
+	})();
+
+	function applyToSingletonTag(styleElement, index, remove, obj) {
+		var css = remove ? "" : obj.css;
+
+		if (styleElement.styleSheet) {
+			styleElement.styleSheet.cssText = replaceText(index, css);
+		} else {
+			var cssNode = document.createTextNode(css);
+			var childNodes = styleElement.childNodes;
+			if (childNodes[index]) styleElement.removeChild(childNodes[index]);
+			if (childNodes.length) {
+				styleElement.insertBefore(cssNode, childNodes[index]);
+			} else {
+				styleElement.appendChild(cssNode);
+			}
+		}
+	}
+
+	function applyToTag(styleElement, obj) {
+		var css = obj.css;
+		var media = obj.media;
+
+		if(media) {
+			styleElement.setAttribute("media", media)
+		}
+
+		if(styleElement.styleSheet) {
+			styleElement.styleSheet.cssText = css;
+		} else {
+			while(styleElement.firstChild) {
+				styleElement.removeChild(styleElement.firstChild);
+			}
+			styleElement.appendChild(document.createTextNode(css));
+		}
+	}
+
+	function updateLink(linkElement, obj) {
+		var css = obj.css;
+		var sourceMap = obj.sourceMap;
+
+		if(sourceMap) {
+			// http://stackoverflow.com/a/26603875
+			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+		}
+
+		var blob = new Blob([css], { type: "text/css" });
+
+		var oldSrc = linkElement.href;
+
+		linkElement.href = URL.createObjectURL(blob);
+
+		if(oldSrc)
+			URL.revokeObjectURL(oldSrc);
+	}
+
 
 /***/ }
 /******/ ]);
