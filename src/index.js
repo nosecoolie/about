@@ -11,7 +11,7 @@ import './assets/app.css'
 class App extends React.Component {
     render () {
         return (
-            <div className='page-wrapper' style={{ padding: '100px 30px 30px 30px', backgroundColor: '#eee' }} >
+            <div className='page-wrapper'>
                 <Profile />
                 <Skill />
                 <Timeline />

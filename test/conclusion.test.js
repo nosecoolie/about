@@ -10,9 +10,9 @@ import { expect } from 'chai'
 */
 
 const myContactDetails = [
-    '<a href="tel:0919453898">0919-453898</a>',
-    '<a href="mailto:nosecoolie@gmail.com">nosecoolie@gmail.com</a>',
-    '<a href="mailto:nosecoolie@gmail.com">nosecoolie@gmail.com</a>'
+    '<a href="tel:0919453898" target="_blank">0919-453898</a>',
+    '<a href="mailto:nosecoolie@gmail.com" target="_blank">nosecoolie@gmail.com</a>',
+    '<a href="https://drive.google.com/file/d/0B4e-iZ8o90hWa2RhQjFWdVF0c2c/view?usp=sharing" target="_blank">我的履歷</a>'
 ]
 
 describe('Conclusion Test', () => {

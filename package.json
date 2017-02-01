@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build",
     "lint": "eslint **/*.js",
-    "test": "mocha --compilers js:babel-core/register"
+    "test": "npm run lint && mocha --compilers js:babel-core/register"
   },
   "license": "MIT",
   "author": "nosecoolie",
