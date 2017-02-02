@@ -21917,7 +21917,13 @@
 	                    _react2.default.createElement(
 	                        'p',
 	                        { style: { fontSize: '1˙px', lineHeight: '1.3', color: '#666', textAlign: 'justify' } },
-	                        '\u55E8\uFF0C\u6211\u662F\u9673\u9A65\uFF0C\u9019\u88E1\u662F\u4E00\u500B\u7528\u4F86\u7C21\u55AE\u4ECB\u7D39\u6211\u81EA\u5DF1\u7684\u7DB2\u7AD9\uFF0C\u4E3B\u8981\u662F\u7528\u4E86 React, Webpack, \u53E6\u5916\u4E5F\u6709\u4F7F\u7528\u4E00\u4E9B CI \u7684\u5DE5\u5177\u50CF\u662F ESLint, Mocha & Travis \u65B9\u4FBF\u6211\u958B\u767C\u4F48\u5C6C\uFF0C\u4EE5\u53CA\u6E2C\u8A66\uFF0C \u95DC\u65BC\u6211\u4F7F\u7528\u7684 Dependencies \u548C\u6211\u7528\u5B83\u5011\u4F86\u505A\u4EC0\u9EBC\u4E8B\uFF0C\u6211\u90FD\u5BEB\u5728\u4E86 readme \u88E1\u3002 \u6216\u662F\u4F60\u504F\u597D\u76F4\u63A5\u5148\u770B\u6211\u7684\u5C65\u6B77\uFF0C\u6211\u4E5F\u6E96\u5099\u4E86 PDF \u7684\u7248\u672C\u3002',
+	                        '\u55E8\uFF0C\u6211\u662F\u9673\u9A65\uFF0C\u9019\u88E1\u662F\u4E00\u500B\u7528\u4F86\u7C21\u55AE\u4ECB\u7D39\u6211\u81EA\u5DF1\u7684\u7DB2\u7AD9\uFF0C\u4E3B\u8981\u662F\u7528\u4E86 React, Webpack, \u53E6\u5916\u4E5F\u6709\u4F7F\u7528\u4E00\u4E9B CI \u7684\u5DE5\u5177\u50CF\u662F ESLint, Mocha & Travis \u65B9\u4FBF\u6211\u958B\u767C\u4F48\u5C6C\uFF0C\u4EE5\u53CA\u6E2C\u8A66\uFF0C \u95DC\u65BC\u6211\u4F7F\u7528\u7684 Dependencies \u548C\u6211\u7528\u5B83\u5011\u4F86\u505A\u4EC0\u9EBC\u4E8B\uFF0C\u6211\u90FD\u5BEB\u5728\u4E86 ',
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://github.com/nosecoolie/about/tree/gh-pages', target: '_blank', style: { color: '#2196F3' } },
+	                            'README \u88E1\u3002'
+	                        ),
+	                        '\u6216\u662F\u4F60\u504F\u597D\u76F4\u63A5\u5148\u770B\u6211\u7684\u5C65\u6B77\uFF0C\u6211\u4E5F\u6E96\u5099\u4E86 PDF \u7684\u7248\u672C\u3002',
 	                        _react2.default.createElement(
 	                            'a',
 	                            { href: 'https://drive.google.com/file/d/0B4e-iZ8o90hWa2RhQjFWdVF0c2c/view?usp=sharing', target: '_blank', style: { color: '#2196F3' } },
