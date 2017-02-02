@@ -28,7 +28,7 @@
 * You don't. Just go https://nosecoolie.github.io/about/
 * Or you can clone this repo and run npm install & npm run dev
 
-##### About me Alexander Chen (陳驥)
+# About me Alexander Chen (陳驥)
 * 79 年次，因為前端最貼近使用者而義無反顧的愛上前端。
 * 平常生活在北部，有任何合作的可能都歡迎聯繫。
 * My Email: nosecoolie@gmail.com
