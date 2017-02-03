@@ -22139,6 +22139,11 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'skill-tag' },
+	                            'Flux'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'skill-tag' },
 	                            'JAVA'
 	                        ),
 	                        _react2.default.createElement(

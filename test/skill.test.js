@@ -26,7 +26,7 @@ const mySkills = {
     'HTML & CSS': ['HTML5', 'CSS3', 'RWD Layout', 'SASS'],
     'Hybrid App': ['Webview', 'Javascript Bridge', 'Cordova', 'Ionic'],
     'Build Tool & CI Tool': ['Webpack', 'Gulp', 'Travis', 'Mocha', 'Nightmares', 'ESLint'],
-    'Backend & Others': ['Firebase', 'JAVA', 'SQL', 'Sketch', 'Basic UI design']
+    'Backend & Others': ['Firebase', 'Flux', 'JAVA', 'SQL', 'Sketch', 'Basic UI design']
 }
 
 describe('Skill Test', () => {

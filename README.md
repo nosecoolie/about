@@ -23,7 +23,7 @@
 
 #### CI Service
 * Travis
-* Run npm lint (eslint **/*.js) & npm test (mocha --compilers js:babel-core/register)
+* Run npm lint (eslint \*\*/\*.js) & npm test (mocha --compilers js:babel-core/register)
 
 ### Installation
 * You don't. Just go https://nosecoolie.github.io/about/

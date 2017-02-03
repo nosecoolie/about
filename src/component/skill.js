@@ -40,6 +40,7 @@ class Protfolio extends React.Component {
                     <div className='skill-wrapper lime'>
                         <h4>Backend & Others</h4>
                         <div className='skill-tag'>Firebase</div>
+                        <div className='skill-tag'>Flux</div>
                         <div className='skill-tag'>JAVA</div>
                         <div className='skill-tag'>SQL</div>
                         <div className='skill-tag'>Sketch</div>
