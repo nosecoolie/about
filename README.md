@@ -1,12 +1,13 @@
-# About This Repo
-* 哈囉，這是用來簡介我個人資料的 Repo. Hi, this is my portfolio repo.
-* [Here is the page url. (Serve with Github gh-pages)](https://nosecoolie.github.io/about/)
+# [About Me](https://nosecoolie.github.io/about/)
+哈囉，這是用來簡介我個人資料的 Repo. Hi, this is my portfolio repo.
+* [Here is the Github Pages url.](https://nosecoolie.github.io/about/)
 * Build with React
 * Also with lots of Build tools & CI tools
 
 ### Build With React
-* Use React, write with ES6.
-* Use Webpack to bundle, dev on Webpack Dev Server, see [Webpack Config](https://github.com/nosecoolie/about/blob/gh-pages/webpack.config.js)
+* Use React, with ES6 syntax.
+* User Webpack for bundling and Webpack Dev Server for development.
+* [Webpack Config](https://github.com/nosecoolie/about/blob/gh-pages/webpack.config.js)
 
 ### CI tools
 #### Testing
@@ -14,7 +15,7 @@
 * Testing Framework: Mocha
 * Assertion Library: Chai
 * React Testing Utility: Enzyme
-* All the spec and test of components is [here](https://github.com/nosecoolie/about/blob/gh-pages/test)
+* All the spec and test of components are [here](https://github.com/nosecoolie/about/blob/gh-pages/test)
 
 #### Linting
 * Use ESLint
