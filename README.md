@@ -6,7 +6,7 @@
 
 ### Build With React
 * Use React, with ES6 syntax.
-* User Webpack for bundling and Webpack Dev Server for development.
+* Use Webpack for bundling and Webpack Dev Server for development.
 * [Webpack Config](https://github.com/nosecoolie/about/blob/gh-pages/webpack.config.js)
 
 ### CI tools
