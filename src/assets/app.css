@@ -43,7 +43,7 @@
   -------------------------------- */
   .cd-container {
     /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-    width: 90%;
+    /*width: 90%;*/
     max-width: 1170px;
     margin: 0 auto;
   }
@@ -201,14 +201,14 @@
   .cd-timeline-content h2 {
     color: #303e49;
   }
-  .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date, .content-wrapper {
     font-size: 13px;
     font-size: 0.8125rem;
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     display: inline-block;
   }
-  .cd-timeline-content p {
+  .cd-timeline-content p, .content-wrapper {
     margin: 1em 0;
     line-height: 1.6;
   }
@@ -247,7 +247,7 @@
       font-size: 20px;
       font-size: 1.25rem;
     }
-    .cd-timeline-content p {
+    .cd-timeline-content p, .cd-timeline-content .content-wrapper {
       font-size: 16px;
       font-size: 1rem;
     }

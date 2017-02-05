@@ -13,12 +13,17 @@ class MyTimeline extends React.Component {
                         <div className='cd-timeline-content'>
                             <h2 className='content-title'>EZTABLE 簡單桌</h2>
                             <h2>Frontend Developer</h2>
-                            <p>
+                            <div className='content-wrapper'>
                                 EZTABLE 是一間致力於線上餐廳訂位的 O2O 網路公司，同時上站人數最高曾經達到 3000 人，每月的流量平均也都在 80 萬人次左右。
-                                在這裡我除了使用 Backbone & Angular 維護舊網站以外，多數的時間是用 React 建置一個全新架構的網站，或是編寫 Webview 和 Bridge 讓 IOS & Android 兩邊平台的 App 可以共用頁面並與 App 做事件傳遞。<br />
-                                EZTABLE 的產品上線多年，也有一套完整的開發流程，讓我學習到了很多，尤其前端 Web Team 只有兩名成員(包含我)，雖然工作時程緊湊，壓力也不小，但是實際參與產品的開發，對新功能的流程提出自己的見解與意見，這種種都讓我忙得非常開心。尤其是看著自己辛苦打造全新的網站(tw.eztable.com)正式上線時的當下真的非常感動。
-                            </p>
-                            <a href='https://tw.eztable.com' target='_blank' className='cd-read-more'>check EZTABLE out</a>
+                                在這裡多數的時間是用 React 建置一個全新架構的網站。<br />
+                                <ul>
+                                    <li>從無到有構築全新的 React 版網頁，除了在短暫的時間內達成所有需求上線以外，更注重到每一個細節，讓使用者得到更棒的體驗。</li>
+                                    <li>建立了新 Webview 機制，大量縮短了開發 Webview 之時間成本，更省去了開發原生 app 的開發成本。</li>
+                                    <li>在短時間內編寫了新的餐廳訂位插件系統，公司藉由此插件順利談下了許多大餐廳的合作案。</li>
+                                </ul>
+                                EZTABLE 的產品上線多年，也有一套完整的開發流程，讓我學習到了很多，尤其前端 Web Team 只有兩名成員(包含我)，雖然工作時程緊湊，壓力也不小，但是實際參與產品的開發，對新功能的流程提出自己的見解與意見，這種種都讓我忙得非常開心。
+                            </div>
+                            <a href='https://tw.eztable.com' target='_blank' className='cd-read-more'>EZTABLE</a>
                             <span className='cd-date'>2015/9/16 ~ 2017/2/28</span>
                         </div>
                     </div>
