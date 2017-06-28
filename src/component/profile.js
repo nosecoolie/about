@@ -13,7 +13,7 @@ class Profile extends React.Component {
                         height: '120px',
                         marginLeft: '-60px',
                         borderRadius: '100%',
-                        backgroundImage: 'url(\'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-0/p206x206/13346532_1348349691847420_1153889197217343765_n.jpg?oh=c44337c1db1cbf04190ae80a0d2afe46&oe=58D757FB\')',
+                        backgroundImage: 'url(\'https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/13336085_1351254634889279_6802801608267771839_n.jpg?oh=b0cc7fab97edbaf8df17563e6b96d004&oe=59CEDC95')',
                         backgroundSize: 'cover',
                         backgroundPosition: '-11px 50%'
                     }}
